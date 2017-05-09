@@ -2,6 +2,7 @@ import os
 from db import pagamentos
 from config import *
 from datetime import datetime
+import requests
 
 def primeiro(iterable, condition = lambda x: True):
     """Retorna o primeiro item do Iterable que satisfizer a condição"""
@@ -54,15 +55,15 @@ def apaga_arquivos(numero_cartao, caminho):
 	if os.path.isfile(resposta):
 		os.remove(resposta)
 
-def notifica_erro_resposta(url_erro, pagamento_id):
-	"""Faz requisicao para informar erro ao servidor do ITAXI"""
-	print("ERRRROO")
-	pass
-
-def notifica_sucesso_resposta(url_sucesso, pagamento_id):
-	"""Faz requisicao para informar sucesso ao servidor do ITAXI"""
-	print("SUCESOOO")
-	pass
+def notifica_resposta(url):
+	"""Tenta fazer 3 vezes a requisicao para informar resposta ao servidor do ITAXI"""
+	try:
+		for i in range(0, 3):
+			response = requests.put(url)
+			if response.status_code == 200:
+				return
+	except Exception as e:
+		print("Nao foi possivel enviar resposta de erro: "+str(e))
 
 def remove_pagamento(pagamento_id):
 	"""Apaga o registro do pagamento do banco de dados"""
@@ -77,13 +78,13 @@ if __name__ == "__main__":
 		if pagamento:
 			print("Processando pagamento: "+str(pagamento['id']))
 			if not criar_arquivo_pagamento(pagamento, CAMINHO):
-				notifica_erro_resposta(URL_NOTIFICA_ERRO, pagamento['id'])
+				notifica_resposta(URL_NOTIFICA_ERRO+str(pagamento['id'])+"/")
 				continue
 			
 			resposta = get_arquivo_resposta(TIMEOUT, CAMINHO)
 			if not resposta:
-				notifica_erro_resposta(URL_NOTIFICA_ERRO, pagamento['id'])
+				notifica_resposta(URL_NOTIFICA_ERRO+str(pagamento['id'])+"/")
 			else:
-				notifica_sucesso_resposta(URL_NOTIFICA_SUCESSO, pagamento['id'])
+				notifica_resposta(URL_NOTIFICA_SUCESSO+str(pagamento['id'])+"/")
 			remove_pagamento(pagamento['id'])
 			apaga_arquivos(pagamento['numero_cartao'], CAMINHO)

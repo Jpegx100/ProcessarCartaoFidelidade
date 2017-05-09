@@ -39,6 +39,11 @@ Para que possa utilizar o banco de dados você deve instalar também o pacote Da
 ```
 pip install dataset
 ```
+#### Requests
+Módulo necessário para realizar as requisições HTTP ao servidor do ITAXI. Instale com:
+```
+pip install requests
+```
 
 ## Configurando o projeto
 Modifique o arquivo ```config.py``` para que os campos de URLs, TIMEOUT e caminho para criação e busca dos arquivos sejam corretamente preenchidos.

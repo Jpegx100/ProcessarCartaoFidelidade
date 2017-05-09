@@ -24,5 +24,5 @@ def cartao_valido(cartao):
             return False
     return True
 
-app.run(debug=True, use_reloader=True)
+app.run(debug=True, use_reloader=True, host= '192.168.1.148')
 
