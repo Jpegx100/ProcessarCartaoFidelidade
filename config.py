@@ -1,0 +1,5 @@
+URL_SERVIDOR = ""
+URL_NOTIFICA_ERRO = URL_SERVIDOR+""
+URL_NOTIFICA_SUCESSO = URL_SERVIDOR+""
+TIMEOUT = 5
+CAMINHO = "/home/jpegx/develop/ProcessarCartaoFidelidade/"
