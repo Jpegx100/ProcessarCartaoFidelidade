@@ -1,8 +1,9 @@
 import os
+import requests
+import json
 from db import pagamentos
 from config import *
 from datetime import datetime
-import requests
 
 def primeiro(iterable, condition = lambda x: True):
     """Retorna o primeiro item do Iterable que satisfizer a condição"""
@@ -55,14 +56,17 @@ def apaga_arquivos(numero_cartao, caminho):
 	if os.path.isfile(resposta):
 		os.remove(resposta)
 
-def notifica_resposta(url):
+def notifica_resposta(url, resposta=None):
 	"""Tenta fazer 3 vezes a requisicao para informar resposta ao servidor do ITAXI"""
+	headers = {'content-type': 'application/json'}
 	try:
 		for i in range(0, 3):
-			response = requests.put(url)
+			if resposta: response = requests.put(url, data=json.dumps({'resposta':resposta}), headers=headers)
+			else: response = requests.put(url)
 			if response.status_code == 200:
 				return
 	except Exception as e:
+		print(e)
 		print("Nao foi possivel enviar resposta de erro: "+str(e))
 
 def remove_pagamento(pagamento_id):
@@ -85,6 +89,6 @@ if __name__ == "__main__":
 			if not resposta:
 				notifica_resposta(URL_NOTIFICA_ERRO+str(pagamento['id'])+"/")
 			else:
-				notifica_resposta(URL_NOTIFICA_SUCESSO+str(pagamento['id'])+"/")
+				notifica_resposta(URL_NOTIFICA_SUCESSO+str(pagamento['id'])+"/", resposta)
 			remove_pagamento(pagamento['id'])
 			apaga_arquivos(pagamento['numero_cartao'], CAMINHO)
