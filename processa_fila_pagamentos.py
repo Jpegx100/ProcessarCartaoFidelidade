@@ -6,7 +6,7 @@ from config import *
 from datetime import datetime
 
 def primeiro(iterable, condition = lambda x: True):
-    """Retorna o primeiro item do Iterable que satisfizer a condição"""
+    """Retorna o primeiro item do Iterable que satisfizer a condicao"""
     for i in iterable:
     	return dict(i)
 
