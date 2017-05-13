@@ -12,7 +12,7 @@ def primeiro(iterable, condition = lambda x: True):
 
 def get_pagamento():
 	"""Pega o primeiro pagamento do banco de dados e retorna-o como um dicionario, 
-	ou None caso não existam pagamentos no banco de dados ou ocorra algum erro."""
+	ou None caso nao existam pagamentos no banco de dados ou ocorra algum erro."""
 	try:
 		pagamento = pagamentos.find(_limit=1, order_by=['id'])
 		return primeiro(pagamento)
@@ -38,7 +38,7 @@ def criar_arquivo_pagamento(pagamento, caminho):
 		return False
 
 def get_arquivo_resposta(timeout, caminho):
-	"""Espera a criação do arquivo de resposta até que haja timeout."""
+	"""Espera a criaçao do arquivo de resposta até que haja timeout."""
 	tempo_inicial = datetime.now()
 	while (datetime.now()-tempo_inicial).total_seconds() < timeout:
 		try:
