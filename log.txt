@@ -1,0 +1,812 @@
+sudo: no tty present and no askpass program specified
+sudo: no tty present and no askpass program specified
+sudo: no tty present and no askpass program specified
+sudo: no tty present and no askpass program specified
+sudo: no tty present and no askpass program specified
+sudo: no tty present and no askpass program specified
+sudo: no tty present and no askpass program specified
+sudo: no tty present and no askpass program specified
+sudo: no tty present and no askpass program specified
+sudo: no tty present and no askpass program specified
+sudo: no tty present and no askpass program specified
+sudo: no tty present and no askpass program specified
+sudo: no tty present and no askpass program specified
+sudo: no tty present and no askpass program specified
+sudo: no tty present and no askpass program specified
+sudo: no tty present and no askpass program specified
+[2017-05-25 17:00:49 -0300] [803] [INFO] Starting gunicorn 19.7.1
+[2017-05-25 17:00:49 -0300] [803] [INFO] Listening at: http://0.0.0.0:5050 (803)
+[2017-05-25 17:00:49 -0300] [803] [INFO] Using worker: sync
+[2017-05-25 17:00:49 -0300] [806] [INFO] Booting worker with pid: 806
+[2017-05-25 17:00:49 -0300] [806] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'wsgi'
+[2017-05-25 17:00:49 -0300] [806] [INFO] Worker exiting (pid: 806)
+[2017-05-25 17:00:49 -0300] [803] [INFO] Shutting down: Master
+[2017-05-25 17:00:49 -0300] [803] [INFO] Reason: Worker failed to boot.
+[2017-05-25 17:00:51 -0300] [812] [INFO] Starting gunicorn 19.7.1
+[2017-05-25 17:00:51 -0300] [812] [INFO] Listening at: http://0.0.0.0:5050 (812)
+[2017-05-25 17:00:51 -0300] [812] [INFO] Using worker: sync
+[2017-05-25 17:00:51 -0300] [815] [INFO] Booting worker with pid: 815
+[2017-05-25 17:00:51 -0300] [815] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'wsgi'
+[2017-05-25 17:00:51 -0300] [815] [INFO] Worker exiting (pid: 815)
+[2017-05-25 17:00:51 -0300] [812] [INFO] Shutting down: Master
+[2017-05-25 17:00:51 -0300] [812] [INFO] Reason: Worker failed to boot.
+[2017-05-25 17:00:53 -0300] [819] [INFO] Starting gunicorn 19.7.1
+[2017-05-25 17:00:53 -0300] [819] [INFO] Listening at: http://0.0.0.0:5050 (819)
+[2017-05-25 17:00:53 -0300] [819] [INFO] Using worker: sync
+[2017-05-25 17:00:53 -0300] [822] [INFO] Booting worker with pid: 822
+[2017-05-25 17:00:53 -0300] [822] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'wsgi'
+[2017-05-25 17:00:53 -0300] [822] [INFO] Worker exiting (pid: 822)
+[2017-05-25 17:00:53 -0300] [819] [INFO] Shutting down: Master
+[2017-05-25 17:00:53 -0300] [819] [INFO] Reason: Worker failed to boot.
+[2017-05-25 17:00:56 -0300] [829] [INFO] Starting gunicorn 19.7.1
+[2017-05-25 17:00:56 -0300] [829] [INFO] Listening at: http://0.0.0.0:5050 (829)
+[2017-05-25 17:00:56 -0300] [829] [INFO] Using worker: sync
+[2017-05-25 17:00:56 -0300] [832] [INFO] Booting worker with pid: 832
+[2017-05-25 17:00:56 -0300] [832] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'wsgi'
+[2017-05-25 17:00:56 -0300] [832] [INFO] Worker exiting (pid: 832)
+[2017-05-25 17:00:56 -0300] [829] [INFO] Shutting down: Master
+[2017-05-25 17:00:56 -0300] [829] [INFO] Reason: Worker failed to boot.
+;: workon: command not found
+;: gunicorn: command not found
+;: workon: command not found
+;: gunicorn: command not found
+;: workon: command not found
+;: gunicorn: command not found
+;: workon: command not found
+;: gunicorn: command not found
+;: workon: command not found
+;: gunicorn: command not found
+;: workon: command not found
+;: gunicorn: command not found
+;: workon: command not found
+;: gunicorn: command not found
+;: workon: command not found
+;: gunicorn: command not found
+;: workon: command not found
+;: gunicorn: command not found
+;: workon: command not found
+;: gunicorn: command not found
+;: workon: command not found
+;: gunicorn: command not found
+;: workon: command not found
+;: gunicorn: command not found
+;: workon: command not found
+;: gunicorn: command not found
+;: workon: command not found
+;: gunicorn: command not found
+;: workon: command not found
+;: gunicorn: command not found
+;: workon: command not found
+;: gunicorn: command not found
+Starting processarcartaofidelidade as infog2
+[2017-05-25 18:10:45 -0300] [5916] [DEBUG] Current configuration:
+  group: 1000
+  ssl_version: 2
+  logconfig: None
+  max_requests: 0
+  certfile: None
+  cert_reqs: 0
+  ciphers: TLSv1
+  config: None
+  statsd_host: None
+  sendfile: None
+  post_fork: <function Postfork.post_fork at 0x7f07ed8c8598>
+  umask: 0
+  threads: 1
+  backlog: 2048
+  limit_request_line: 4094
+  on_starting: <function OnStarting.on_starting at 0x7f07ed8b8ea0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f07ed8c8730>
+  pre_exec: <function PreExec.pre_exec at 0x7f07ed8c8bf8>
+  user: 1000
+  initgroups: False
+  do_handshake_on_connect: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  syslog_addr: udp://localhost:514
+  limit_request_field_size: 8190
+  reload: False
+  max_requests_jitter: 0
+  on_reload: <function OnReload.on_reload at 0x7f07ed8c80d0>
+  loglevel: debug
+  syslog_prefix: None
+  enable_stdio_inheritance: False
+  child_exit: <function ChildExit.child_exit at 0x7f07ed8cb0d0>
+  statsd_prefix: 
+  ca_certs: None
+  pidfile: None
+  capture_output: False
+  workers: 3
+  preload_app: False
+  daemon: False
+  worker_tmp_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_fork: <function Prefork.pre_fork at 0x7f07ed8c8400>
+  paste: None
+  syslog_facility: user
+  tmp_upload_dir: None
+  forwarded_allow_ips: ['127.0.0.1']
+  raw_paste_global_conf: []
+  default_proc_name: wgsi:application
+  proxy_protocol: False
+  accesslog: None
+  logger_class: gunicorn.glogging.Logger
+  when_ready: <function WhenReady.when_ready at 0x7f07ed8c8268>
+  pre_request: <function PreRequest.pre_request at 0x7f07ed8c8d90>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f07ed8cb268>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f07ed8cb400>
+  on_exit: <function OnExit.on_exit at 0x7f07ed8cb598>
+  proc_name: processarcartaofidelidade
+  worker_class: sync
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  keyfile: None
+  reload_engine: auto
+  worker_int: <function WorkerInt.worker_int at 0x7f07ed8c88c8>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f07ed8c8a60>
+  post_request: <function PostRequest.post_request at 0x7f07ed8c8ea0>
+  worker_connections: 1000
+  chdir: /home/infog2/ProcessarCartaoFidelidade
+  check_config: False
+  raw_env: []
+  limit_request_fields: 100
+  bind: ['unix:/home/infog2/gunicorn.sock']
+  pythonpath: None
+  suppress_ragged_eofs: True
+  syslog: False
+  spew: False
+[2017-05-25 18:10:45 -0300] [5916] [INFO] Starting gunicorn 19.7.1
+[2017-05-25 18:10:45 -0300] [5916] [DEBUG] Arbiter booted
+[2017-05-25 18:10:45 -0300] [5916] [INFO] Listening at: unix:/home/infog2/gunicorn.sock (5916)
+[2017-05-25 18:10:45 -0300] [5916] [INFO] Using worker: sync
+[2017-05-25 18:10:45 -0300] [5925] [INFO] Booting worker with pid: 5925
+[2017-05-25 18:10:45 -0300] [5925] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'wgsi'
+[2017-05-25 18:10:45 -0300] [5925] [INFO] Worker exiting (pid: 5925)
+[2017-05-25 18:10:45 -0300] [5926] [INFO] Booting worker with pid: 5926
+[2017-05-25 18:10:45 -0300] [5926] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'wgsi'
+[2017-05-25 18:10:45 -0300] [5926] [INFO] Worker exiting (pid: 5926)
+[2017-05-25 18:10:45 -0300] [5916] [INFO] Shutting down: Master
+[2017-05-25 18:10:45 -0300] [5916] [INFO] Reason: Worker failed to boot.
+Starting processarcartaofidelidade as infog2
+[2017-05-25 18:10:46 -0300] [5927] [DEBUG] Current configuration:
+  loglevel: debug
+  raw_env: []
+  backlog: 2048
+  on_reload: <function OnReload.on_reload at 0x7f05aac040d0>
+  when_ready: <function WhenReady.when_ready at 0x7f05aac04268>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f05aac04730>
+  post_request: <function PostRequest.post_request at 0x7f05aac04ea0>
+  daemon: False
+  umask: 0
+  errorlog: -
+  child_exit: <function ChildExit.child_exit at 0x7f05aac070d0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f05aac07268>
+  worker_tmp_dir: None
+  pythonpath: None
+  raw_paste_global_conf: []
+  syslog_prefix: None
+  enable_stdio_inheritance: False
+  suppress_ragged_eofs: True
+  check_config: False
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f05aac04a60>
+  keyfile: None
+  timeout: 30
+  graceful_timeout: 30
+  accesslog: None
+  capture_output: False
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_facility: user
+  pre_exec: <function PreExec.pre_exec at 0x7f05aac04bf8>
+  limit_request_field_size: 8190
+  on_starting: <function OnStarting.on_starting at 0x7f05aabf4ea0>
+  worker_int: <function WorkerInt.worker_int at 0x7f05aac048c8>
+  cert_reqs: 0
+  max_requests_jitter: 0
+  post_fork: <function Postfork.post_fork at 0x7f05aac04598>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f05aac07400>
+  on_exit: <function OnExit.on_exit at 0x7f05aac07598>
+  worker_class: sync
+  max_requests: 0
+  ssl_version: 2
+  keepalive: 2
+  preload_app: False
+  threads: 1
+  spew: False
+  certfile: None
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  workers: 3
+  sendfile: None
+  pidfile: None
+  user: 1000
+  tmp_upload_dir: None
+  config: None
+  group: 1000
+  reload_engine: auto
+  chdir: /home/infog2/ProcessarCartaoFidelidade
+  forwarded_allow_ips: ['127.0.0.1']
+  statsd_prefix: 
+  ca_certs: None
+  limit_request_fields: 100
+  default_proc_name: wgsi:application
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  pre_fork: <function Prefork.pre_fork at 0x7f05aac04400>
+  pre_request: <function PreRequest.pre_request at 0x7f05aac04d90>
+  bind: ['unix:/home/infog2/gunicorn.sock']
+  syslog: False
+  reload: False
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_protocol: False
+  limit_request_line: 4094
+  initgroups: False
+  worker_connections: 1000
+  logger_class: gunicorn.glogging.Logger
+  proc_name: processarcartaofidelidade
+  statsd_host: None
+  paste: None
+  proxy_allow_ips: ['127.0.0.1']
+[2017-05-25 18:10:46 -0300] [5927] [INFO] Starting gunicorn 19.7.1
+[2017-05-25 18:10:46 -0300] [5927] [DEBUG] Arbiter booted
+[2017-05-25 18:10:46 -0300] [5927] [INFO] Listening at: unix:/home/infog2/gunicorn.sock (5927)
+[2017-05-25 18:10:46 -0300] [5927] [INFO] Using worker: sync
+[2017-05-25 18:10:46 -0300] [5934] [INFO] Booting worker with pid: 5934
+[2017-05-25 18:10:46 -0300] [5934] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'wgsi'
+[2017-05-25 18:10:46 -0300] [5934] [INFO] Worker exiting (pid: 5934)
+[2017-05-25 18:10:46 -0300] [5935] [INFO] Booting worker with pid: 5935
+[2017-05-25 18:10:46 -0300] [5935] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'wgsi'
+[2017-05-25 18:10:46 -0300] [5935] [INFO] Worker exiting (pid: 5935)
+[2017-05-25 18:10:46 -0300] [5936] [INFO] Booting worker with pid: 5936
+[2017-05-25 18:10:46 -0300] [5927] [DEBUG] 3 workers
+[2017-05-25 18:10:46 -0300] [5936] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'wgsi'
+[2017-05-25 18:10:46 -0300] [5936] [INFO] Worker exiting (pid: 5936)
+[2017-05-25 18:10:46 -0300] [5927] [INFO] Shutting down: Master
+[2017-05-25 18:10:46 -0300] [5927] [INFO] Reason: Worker failed to boot.
+Starting processarcartaofidelidade as infog2
+[2017-05-25 18:10:49 -0300] [5937] [DEBUG] Current configuration:
+  on_exit: <function OnExit.on_exit at 0x7f8f1708a598>
+  statsd_host: None
+  umask: 0
+  max_requests_jitter: 0
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keepalive: 2
+  on_reload: <function OnReload.on_reload at 0x7f8f170870d0>
+  worker_int: <function WorkerInt.worker_int at 0x7f8f170878c8>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f8f17087a60>
+  limit_request_field_size: 8190
+  errorlog: -
+  logger_class: gunicorn.glogging.Logger
+  syslog: False
+  syslog_facility: user
+  spew: False
+  bind: ['unix:/home/infog2/gunicorn.sock']
+  backlog: 2048
+  reload: False
+  keyfile: None
+  user: 1000
+  secure_scheme_headers: {'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-SSL': 'on'}
+  syslog_prefix: None
+  post_request: <function PostRequest.post_request at 0x7f8f17087ea0>
+  workers: 3
+  syslog_addr: udp://localhost:514
+  ssl_version: 2
+  when_ready: <function WhenReady.when_ready at 0x7f8f17087268>
+  proc_name: processarcartaofidelidade
+  timeout: 30
+  accesslog: None
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  enable_stdio_inheritance: False
+  statsd_prefix: 
+  config: None
+  pidfile: None
+  raw_paste_global_conf: []
+  pre_exec: <function PreExec.pre_exec at 0x7f8f17087bf8>
+  pre_request: <function PreRequest.pre_request at 0x7f8f17087d90>
+  suppress_ragged_eofs: True
+  initgroups: False
+  check_config: False
+  cert_reqs: 0
+  post_fork: <function Postfork.post_fork at 0x7f8f17087598>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f8f17087730>
+  worker_class: sync
+  default_proc_name: wgsi:application
+  do_handshake_on_connect: False
+  preload_app: False
+  chdir: /home/infog2/ProcessarCartaoFidelidade
+  raw_env: []
+  group: 1000
+  threads: 1
+  max_requests: 0
+  daemon: False
+  forwarded_allow_ips: ['127.0.0.1']
+  ciphers: TLSv1
+  pre_fork: <function Prefork.pre_fork at 0x7f8f17087400>
+  child_exit: <function ChildExit.child_exit at 0x7f8f1708a0d0>
+  worker_connections: 1000
+  graceful_timeout: 30
+  limit_request_line: 4094
+  certfile: None
+  sendfile: None
+  worker_tmp_dir: None
+  tmp_upload_dir: None
+  capture_output: False
+  limit_request_fields: 100
+  worker_exit: <function WorkerExit.worker_exit at 0x7f8f1708a268>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f8f1708a400>
+  reload_engine: auto
+  pythonpath: None
+  paste: None
+  ca_certs: None
+  on_starting: <function OnStarting.on_starting at 0x7f8f17077ea0>
+  loglevel: debug
+  logconfig: None
+[2017-05-25 18:10:49 -0300] [5937] [INFO] Starting gunicorn 19.7.1
+[2017-05-25 18:10:49 -0300] [5937] [DEBUG] Arbiter booted
+[2017-05-25 18:10:49 -0300] [5937] [INFO] Listening at: unix:/home/infog2/gunicorn.sock (5937)
+[2017-05-25 18:10:49 -0300] [5937] [INFO] Using worker: sync
+[2017-05-25 18:10:49 -0300] [5944] [INFO] Booting worker with pid: 5944
+[2017-05-25 18:10:49 -0300] [5944] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'wgsi'
+[2017-05-25 18:10:49 -0300] [5944] [INFO] Worker exiting (pid: 5944)
+[2017-05-25 18:10:49 -0300] [5945] [INFO] Booting worker with pid: 5945
+[2017-05-25 18:10:49 -0300] [5945] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'wgsi'
+[2017-05-25 18:10:49 -0300] [5945] [INFO] Worker exiting (pid: 5945)
+[2017-05-25 18:10:49 -0300] [5937] [INFO] Shutting down: Master
+[2017-05-25 18:10:49 -0300] [5937] [INFO] Reason: Worker failed to boot.
+Starting processarcartaofidelidade as infog2
+[2017-05-25 18:10:52 -0300] [5951] [DEBUG] Current configuration:
+  ciphers: TLSv1
+  limit_request_field_size: 8190
+  loglevel: debug
+  worker_exit: <function WorkerExit.worker_exit at 0x7fda94822268>
+  certfile: None
+  spew: False
+  raw_env: []
+  worker_class: sync
+  max_requests: 0
+  keepalive: 2
+  accesslog: None
+  post_fork: <function Postfork.post_fork at 0x7fda9481f598>
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  logconfig: None
+  enable_stdio_inheritance: False
+  preload_app: False
+  pidfile: None
+  forwarded_allow_ips: ['127.0.0.1']
+  on_reload: <function OnReload.on_reload at 0x7fda9481f0d0>
+  logger_class: gunicorn.glogging.Logger
+  pre_exec: <function PreExec.pre_exec at 0x7fda9481fbf8>
+  pre_request: <function PreRequest.pre_request at 0x7fda9481fd90>
+  bind: ['unix:/home/infog2/gunicorn.sock']
+  proxy_allow_ips: ['127.0.0.1']
+  raw_paste_global_conf: []
+  child_exit: <function ChildExit.child_exit at 0x7fda948220d0>
+  config: None
+  threads: 1
+  umask: 0
+  reload: False
+  worker_connections: 1000
+  timeout: 30
+  do_handshake_on_connect: False
+  pythonpath: None
+  paste: None
+  keyfile: None
+  on_exit: <function OnExit.on_exit at 0x7fda94822598>
+  workers: 3
+  sendfile: None
+  ssl_version: 2
+  graceful_timeout: 30
+  chdir: /home/infog2/ProcessarCartaoFidelidade
+  suppress_ragged_eofs: True
+  statsd_prefix: 
+  initgroups: False
+  secure_scheme_headers: {'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-PROTOCOL': 'ssl'}
+  proxy_protocol: False
+  on_starting: <function OnStarting.on_starting at 0x7fda9480fea0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fda9481f730>
+  worker_int: <function WorkerInt.worker_int at 0x7fda9481f8c8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fda94822400>
+  syslog_prefix: None
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fda9481fa60>
+  max_requests_jitter: 0
+  proc_name: processarcartaofidelidade
+  limit_request_line: 4094
+  limit_request_fields: 100
+  tmp_upload_dir: None
+  post_request: <function PostRequest.post_request at 0x7fda9481fea0>
+  default_proc_name: wgsi:application
+  backlog: 2048
+  syslog: False
+  daemon: False
+  capture_output: False
+  syslog_facility: user
+  statsd_host: None
+  worker_tmp_dir: None
+  reload_engine: auto
+  user: 1000
+  pre_fork: <function Prefork.pre_fork at 0x7fda9481f400>
+  check_config: False
+  syslog_addr: udp://localhost:514
+  ca_certs: None
+  group: 1000
+  when_ready: <function WhenReady.when_ready at 0x7fda9481f268>
+  cert_reqs: 0
+[2017-05-25 18:10:52 -0300] [5951] [INFO] Starting gunicorn 19.7.1
+[2017-05-25 18:10:52 -0300] [5951] [DEBUG] Arbiter booted
+[2017-05-25 18:10:52 -0300] [5951] [INFO] Listening at: unix:/home/infog2/gunicorn.sock (5951)
+[2017-05-25 18:10:52 -0300] [5951] [INFO] Using worker: sync
+[2017-05-25 18:10:52 -0300] [5958] [INFO] Booting worker with pid: 5958
+[2017-05-25 18:10:52 -0300] [5958] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/infog2/.virtualenvs/processa_cartao_fidelidade/lib/python3.5/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'wgsi'
+[2017-05-25 18:10:52 -0300] [5958] [INFO] Worker exiting (pid: 5958)
+[2017-05-25 18:10:52 -0300] [5951] [INFO] Shutting down: Master
+[2017-05-25 18:10:52 -0300] [5951] [INFO] Reason: Worker failed to boot.
+Starting processarcartaofidelidade as infog2
+[2017-05-25 18:13:14 -0300] [6084] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_int: <function WorkerInt.worker_int at 0x7fd3c99f68c8>
+  default_proc_name: wsgi:application
+  worker_class: sync
+  do_handshake_on_connect: False
+  workers: 3
+  logconfig: None
+  preload_app: False
+  group: 1000
+  keepalive: 2
+  suppress_ragged_eofs: True
+  ciphers: TLSv1
+  max_requests: 0
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  ssl_version: 2
+  tmp_upload_dir: None
+  limit_request_line: 4094
+  chdir: /home/infog2/ProcessarCartaoFidelidade
+  pidfile: None
+  raw_paste_global_conf: []
+  post_fork: <function Postfork.post_fork at 0x7fd3c99f6598>
+  pre_request: <function PreRequest.pre_request at 0x7fd3c99f6d90>
+  accesslog: None
+  check_config: False
+  capture_output: False
+  syslog_facility: user
+  worker_tmp_dir: None
+  cert_reqs: 0
+  limit_request_field_size: 8190
+  forwarded_allow_ips: ['127.0.0.1']
+  statsd_prefix: 
+  threads: 1
+  config: None
+  spew: False
+  pythonpath: None
+  paste: None
+  proxy_allow_ips: ['127.0.0.1']
+  syslog_addr: udp://localhost:514
+  timeout: 30
+  pre_exec: <function PreExec.pre_exec at 0x7fd3c99f6bf8>
+  keyfile: None
+  when_ready: <function WhenReady.when_ready at 0x7fd3c99f6268>
+  limit_request_fields: 100
+  reload: False
+  worker_exit: <function WorkerExit.worker_exit at 0x7fd3c99f9268>
+  max_requests_jitter: 0
+  on_exit: <function OnExit.on_exit at 0x7fd3c99f9598>
+  reload_engine: auto
+  loglevel: debug
+  proc_name: processarcartaofidelidade
+  enable_stdio_inheritance: False
+  sendfile: None
+  daemon: False
+  raw_env: []
+  user: 1000
+  umask: 0
+  initgroups: False
+  bind: ['unix:/home/infog2/gunicorn.sock']
+  on_starting: <function OnStarting.on_starting at 0x7fd3c99e6ea0>
+  secure_scheme_headers: {'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-PROTOCOL': 'ssl'}
+  syslog: False
+  syslog_prefix: None
+  ca_certs: None
+  backlog: 2048
+  on_reload: <function OnReload.on_reload at 0x7fd3c99f60d0>
+  pre_fork: <function Prefork.pre_fork at 0x7fd3c99f6400>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fd3c99f6730>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fd3c99f6a60>
+  post_request: <function PostRequest.post_request at 0x7fd3c99f6ea0>
+  child_exit: <function ChildExit.child_exit at 0x7fd3c99f90d0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fd3c99f9400>
+  worker_connections: 1000
+  errorlog: -
+  logger_class: gunicorn.glogging.Logger
+  statsd_host: None
+  graceful_timeout: 30
+[2017-05-25 18:13:14 -0300] [6084] [INFO] Starting gunicorn 19.7.1
+[2017-05-25 18:13:14 -0300] [6084] [DEBUG] Arbiter booted
+[2017-05-25 18:13:14 -0300] [6084] [INFO] Listening at: unix:/home/infog2/gunicorn.sock (6084)
+[2017-05-25 18:13:14 -0300] [6084] [INFO] Using worker: sync
+[2017-05-25 18:13:14 -0300] [6091] [INFO] Booting worker with pid: 6091
+[2017-05-25 18:13:14 -0300] [6092] [INFO] Booting worker with pid: 6092
+[2017-05-25 18:13:14 -0300] [6093] [INFO] Booting worker with pid: 6093
+[2017-05-25 18:13:14 -0300] [6084] [DEBUG] 3 workers
+Starting processarcartaofidelidade as infog2
+[2017-05-25 18:17:34 -0300] [6264] [DEBUG] Current configuration:
+  user: 1000
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  proxy_protocol: False
+  statsd_host: None
+  raw_env: []
+  pidfile: None
+  worker_class: sync
+  max_requests: 0
+  keepalive: 2
+  limit_request_fields: 100
+  worker_int: <function WorkerInt.worker_int at 0x7fe9408e18c8>
+  logger_class: gunicorn.glogging.Logger
+  umask: 0
+  pythonpath: None
+  raw_paste_global_conf: []
+  timeout: 30
+  graceful_timeout: 30
+  on_starting: <function OnStarting.on_starting at 0x7fe9408d1ea0>
+  pre_fork: <function Prefork.pre_fork at 0x7fe9408e1400>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fe9408e1a60>
+  pre_exec: <function PreExec.pre_exec at 0x7fe9408e1bf8>
+  pre_request: <function PreRequest.pre_request at 0x7fe9408e1d90>
+  errorlog: -
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fe9408e4400>
+  do_handshake_on_connect: False
+  syslog: False
+  max_requests_jitter: 0
+  on_exit: <function OnExit.on_exit at 0x7fe9408e4598>
+  worker_connections: 1000
+  on_reload: <function OnReload.on_reload at 0x7fe9408e10d0>
+  threads: 1
+  reload_engine: auto
+  when_ready: <function WhenReady.when_ready at 0x7fe9408e1268>
+  post_request: <function PostRequest.post_request at 0x7fe9408e1ea0>
+  group: 1000
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  check_config: False
+  keyfile: None
+  initgroups: False
+  ca_certs: None
+  suppress_ragged_eofs: True
+  proc_name: processarcartaofidelidade
+  workers: 3
+  capture_output: False
+  syslog_prefix: None
+  child_exit: <function ChildExit.child_exit at 0x7fe9408e40d0>
+  statsd_prefix: 
+  limit_request_field_size: 8190
+  post_fork: <function Postfork.post_fork at 0x7fe9408e1598>
+  reload: False
+  ssl_version: 2
+  cert_reqs: 0
+  ciphers: TLSv1
+  sendfile: None
+  chdir: /home/infog2/ProcessarCartaoFidelidade
+  worker_tmp_dir: None
+  tmp_upload_dir: None
+  paste: None
+  proxy_allow_ips: ['127.0.0.1']
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  config: None
+  bind: ['0.0.0.0:5050']
+  backlog: 2048
+  preload_app: False
+  daemon: False
+  secure_scheme_headers: {'X-FORWARDED-SSL': 'on', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-PROTOCOL': 'ssl'}
+  limit_request_line: 4094
+  forwarded_allow_ips: ['127.0.0.1']
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fe9408e1730>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fe9408e4268>
+  certfile: None
+  default_proc_name: wsgi:application
+  accesslog: None
+  spew: False
+[2017-05-25 18:17:34 -0300] [6264] [INFO] Starting gunicorn 19.7.1
+[2017-05-25 18:17:34 -0300] [6264] [DEBUG] Arbiter booted
+[2017-05-25 18:17:34 -0300] [6264] [INFO] Listening at: http://0.0.0.0:5050 (6264)
+[2017-05-25 18:17:34 -0300] [6264] [INFO] Using worker: sync
+[2017-05-25 18:17:34 -0300] [6271] [INFO] Booting worker with pid: 6271
+[2017-05-25 18:17:34 -0300] [6272] [INFO] Booting worker with pid: 6272
+[2017-05-25 18:17:34 -0300] [6273] [INFO] Booting worker with pid: 6273
+[2017-05-25 18:17:34 -0300] [6264] [DEBUG] 3 workers
+[2017-05-25 18:17:40 -0300] [6273] [DEBUG] POST /

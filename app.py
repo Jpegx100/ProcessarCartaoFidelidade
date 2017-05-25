@@ -13,7 +13,7 @@ def adicionar_pagamento():
         else: 
             return "Nem todos os campos foram repassados", 400
     except Exception as e:
-        return "Erro interno ao servidor", 500
+        return "Erro interno ao servidor"+str(e), 500
 
 def cartao_valido(cartao):
     # return False
