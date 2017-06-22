@@ -67,8 +67,7 @@ def notifica_resposta(url, resposta=None):
 			if response.status_code == 200:
 				return
 	except Exception as e:
-		print(e)
-		print("Nao foi possivel enviar resposta de erro: "+str(e))
+		print("Nao foi possivel enviar resposta("+str(resposta)+") para a URL: "+str(url)+" - ERRO: "+str(e))
 
 def remove_pagamento(pagamento_id):
 	"""Apaga o registro do pagamento do banco de dados"""

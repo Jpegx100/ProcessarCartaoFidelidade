@@ -17,7 +17,7 @@ def adicionar_pagamento():
 
 def cartao_valido(cartao):
     # return False
-    chaves = ["numero_cartao", "validade", "cvv", "bandeira", "valor", "unidade", "latitude", "longitude"]
+    chaves = ["numero_cartao", "valor", "unidade", "id"]
     chaves_cartao = cartao.keys()
     for c in chaves:
         if c not in chaves_cartao:
